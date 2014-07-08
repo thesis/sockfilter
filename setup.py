@@ -9,7 +9,8 @@ def long_description():
 
 
 def test_requirements():
-    return open('test_requirements.txt').readlines()
+    from os.path import join, dirname
+    return open(join(dirname(__file__), 'test_requirements.txt')).readlines()
 
 
 setup(
