@@ -15,7 +15,7 @@ def test_requirements():
 
 setup(
     name='sockfilter',
-    version='1.1',
+    version='1.2',
     py_modules=['sockfilter'],
     description='Block socket creation by host/port.',
     long_description=long_description(),
