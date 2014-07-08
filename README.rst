@@ -11,7 +11,7 @@ Usage
 -----
 
 The intended use is for making sure your unit tests don't make network
-connections. Activate `sockfilter` with a predicate like:
+connections. Activate ``sockfilter`` with a predicate like:
 
 .. code:: python
 
@@ -23,11 +23,11 @@ connections. Activate `sockfilter` with a predicate like:
     sockfilter.enable(socket_address_allowed)
 
 Any subsequent attempts to open a connection at an address not satisfying
-the predicate will raise `sockfilter.SockFilterError`.
+the predicate will raise ``sockfilter.SockFilterError``.
 
 
-`with_sockfiltering` decorator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``with_sockfiltering`` decorator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
 
@@ -38,8 +38,8 @@ the predicate will raise `sockfilter.SockFilterError`.
         foo()
 
 
-`sockfiltering` context manager
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``sockfiltering`` context manager
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
 
@@ -50,8 +50,8 @@ the predicate will raise `sockfilter.SockFilterError`.
             foo()
 
 
-`enable` and `disable`
-~~~~~~~~~~~~~~~~~~~~~~
+``enable`` and ``disable``
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
 
@@ -73,7 +73,7 @@ the predicate will raise `sockfilter.SockFilterError`.
 Under the hood
 --------------
 
-Sockfilter works by monkey-patching Python's `socket` library,
+Sockfilter works by monkey-patching Python's ``socket`` library,
 inspired by HTTPretty_.
 
 .. _HTTPretty: https://github.com/gabrielfalcao/HTTPretty
