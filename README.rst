@@ -14,6 +14,7 @@ The intended use is for making sure your unit tests don't make network
 connections. Activate `sockfilter` with a predicate like:
 
 .. code:: python
+
     # only allow http connections to localhost
     def socket_address_allowed(address):
         return (address.host in ['localhost', '127.0.0.1'] and
